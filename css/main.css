@@ -1,0 +1,118 @@
+* {
+  scroll-behavior: smooth;
+}
+
+.card:hover .layer {
+  bottom: 0;
+  padding: 20px;
+}
+
+.card:hover i {
+  display: inline-block;
+}
+.card:hover p {
+  display: inline-block;
+}
+
+.layer {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 100%;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: all 0.4s ease-in-out;
+}
+
+.layer i {
+  align-self: center;
+  font-size: 50px;
+}
+
+.layer i:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.layer i,
+.layer p {
+  color: #ff581c;
+  height: 0;
+  display: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.layer p {
+  font-size: 22px;
+  font-weight: bold;
+  align-self: flex-end;
+}
+
+.layer p:last-of-type {
+  opacity: 0 !important;
+}
+
+.pop-up {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s ease-in-out;
+}
+
+.pop-card {
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+  height: 80%;
+  background-color: aliceblue;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 2px #999;
+}
+
+.pop-image {
+  width: 40%;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.pop-image img {
+  width: 100%;
+}
+
+.pop-info {
+  position: relative;
+  width: 55%;
+  height: 100%;
+}
+
+.pop-info p {
+  font-size: 20px;
+}
+.pop-info p i {
+  color: #fc6d39;
+}
+
+.pop-info p span {
+  text-transform: capitalize;
+}
+
+.pop-info > i {
+  position: absolute;
+  top: -2%;
+  right: -4%;
+  font-size: 25px;
+  transition: all 0.3s ease-in-out;
+}
+
+.pop-info > i:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
